@@ -35,13 +35,14 @@ a:hover {
 }
 
 .btn {
-    background: #212121;
+
     /* font-family: 'Montserrat', sans-serif; */
-    color: #FFFCF9;
+
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     border: 1px solid #30e3cb;
+    box-shadow: 0 -1px #30e3cb inset;
 }
 
 .btn:hover {
@@ -49,4 +50,15 @@ a:hover {
     color: #000;
     text-decoration: none;
 
+}
+
+button{
+    background: none;
+    text-decoration: none;
+}
+
+.lightMode{
+    background-color: #fff;
+    color: #000;
+    
 }
