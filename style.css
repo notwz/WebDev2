@@ -1,20 +1,36 @@
 body {
     background-color: #212121;
-    color: light-grey;
-    font-family:  Helvetica, Arial, sans-serif
-
+    font-color: #fff;
+    font-family: Helvetica, Arial, sans-serif
 }
 
-a{
+a {
     color: lightgrey;
     /* font-family: 'Montserrat', sans-serif; */
     margin: 10px 20px;
     text-decoration: none;
     box-shadow: 0 -1px #30e3cb inset;
-  }
+}
 
-  
+
 a:hover {
     color: #30e3cb;
-  
-  }
+
+}
+
+.btn {
+    background: #1B2A3D;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: #FFFCF9;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 1px solid #30e3cb;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    color: #000;
+    text-decoration: none;
+    border: 0px 0px 10px 0px solid #fff;
+}
