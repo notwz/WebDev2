@@ -13,6 +13,9 @@ h1 {
 div {
     margin: 4%;
     padding: 2%;
+    display:flex;
+    flex-wrap:wrap;
+    
 }
 
 a {
