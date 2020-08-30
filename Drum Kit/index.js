@@ -37,13 +37,14 @@ function handleClick() {
 }
 
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
+    var buttonInnerHTML = this.innerHTML;
     document.querySelectorAll(".drum")[i].addEventListener("click", handleClick);
     makeSound(buttonInnerHTML);
 
 }
 
-document.addEventListener("keydown", function(event) {
-    makeSound(event.key); 
+document.addEventListener("keydown", function (event) {
+    makeSound(event.key);
 });
 
 
