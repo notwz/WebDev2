@@ -4,3 +4,17 @@ body {
     font-family:  Helvetica, Arial, sans-serif
 
 }
+
+a{
+    color: lightgrey;
+    /* font-family: 'Montserrat', sans-serif; */
+    margin: 10px 20px;
+    text-decoration: none;
+    box-shadow: 0 -1px #30e3cb inset;
+  }
+
+  
+a:hover {
+    color: #30e3cb;
+  
+  }
