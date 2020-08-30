@@ -1,7 +1,12 @@
 body {
+    padding: 7% 15%;
     background-color: #212121;
     color: #fff;
     font-family: Helvetica, Arial, sans-serif
+}
+
+h1 {
+    font-size: 4rem;
 }
 
 a {
@@ -10,11 +15,13 @@ a {
     margin: 10px 20px;
     text-decoration: none;
     box-shadow: 0 -1px #30e3cb inset;
+    font-size: 2.5rem;
 }
 
 
 a:hover {
     color: #30e3cb;
+    
 
 }
 
