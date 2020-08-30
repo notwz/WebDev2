@@ -1,6 +1,4 @@
 function handleClick() {
-
-
     var buttonInnerHTML = this.innerHTML;
     switch (buttonInnerHTML) {
         case "w":
@@ -35,18 +33,6 @@ function handleClick() {
             break;
     }
 }
-
-for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
-    var buttonInnerHTML = this.innerHTML;
-    document.querySelectorAll(".drum")[i].addEventListener("click", handleClick);
-    makeSound(buttonInnerHTML);
-
-}
-
-document.addEventListener("keydown", function (event) {
-    makeSound(event.key);
-});
-
 
 function makeSound(press) {
     switch (press) {
@@ -83,3 +69,33 @@ function makeSound(press) {
     }
 
 }
+
+function buttonAnimation(currentKey) {
+    var activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("pressed");
+    setTimeout(function() {
+        activeButton.classList.remove("pressed")
+    }, 100);
+    
+
+
+}
+
+for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
+    
+    document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+        var buttonInnerHTML = this.innerHTML;
+        handleClick;
+        makeSound(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML);
+    
+    });
+    
+
+}
+
+document.addEventListener("keydown", function (event) {
+    makeSound(event.key);
+    buttonAnimation(event.key);
+
+});
